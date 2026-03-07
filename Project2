@@ -1,1 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Event Registration Form</title>
+    </head>
 
+    <body>
+        <header>
+            <h1>Event Registration Form</h1>
+            <hr>
+        </header>
+
+    <form>
+        <section id="event-name">
+            <h4>Event Name</h4>
+            <select id="event-name" name="event" required>
+                <option value="Coding Competition">Coding Competition</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="AI Workshop">AI Workshop</option>
+                <option value="Gaming Tournament">Gaming Tournament</option>
+            </select>
+        </section>
+        <br>
+
+        <section id="participation-type">
+            <label>
+                <input type="radio" name="participation-type" value="individual" required>Individual
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="participation-type" value="team" required>Team
+            </label>
+        </section>
+    
+        <section id="participant-details">
+            <h4>Participant Details</h4>
+            <input type="text" name="name" placeholder="Enter your name" required><br><br>
+            <input type="email" name="email" placeholder="Enter your email" required><br><br>
+            <input type="tel" name="number" placeholder="Enter phone number" required><br><br>
+            <input type="text" name="college" placeholder="Enter college name" required><br>
+            
+
+            <h4>Enter your branch</h4>
+            <select id="branch" name="branch" required>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ENTC">ENTC</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select>
+            <br>
+        </section>
+
+        <section id="year">
+            <h4>Enter Year</h4>
+            <label>
+                <input type="radio" name="year" value="1st" required>1st
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="year" value="2nd">2nd
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="year" value="3rd">3rd
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="year" value="4th">4th
+            </label>
+            <br>
+        </section>
+
+        <section id="team-details">
+            <h4>Team Details (Optional)</h4>
+            <input type="text" name="team-name" placeholder="Team Name"><br><br>
+            <input type="number" name="members" placeholder="No. of Members (1-5)"><br><br>
+            <input type="text" name="leader" placeholder="Team Leader Name"><br>
+        </section>
+
+        <section id="payment-mode">
+            <h4>Payment Mode</h4>
+            <label>
+                <input type="radio" name="payment-mode" value="UPI" required>UPI
+            </label>
+            <label>
+                <input type="radio" name="payment-mode" value="Card">Card
+            </label>
+            <label>
+                <input type="radio" name="payment-mode" value="Cash">Cash
+            </label>
+            <br>
+
+            <br><input type="text" name="transaction-id" placeholder="Enter Transaction ID" required>
+            <br><br>
+
+            <label>Upload Payment Screenshot:<br><br>
+                <input type="file" name="fileUpload">
+            </label>
+        </section>
+
+        <section id="additional-information">
+            <h4>Additional Information</h4>
+            <textarea name="reason" placeholder="Why do you want to participate?"></textarea>
+            <br>
+
+            <p><strong>Terms & Conditions</strong></p>
+            <p>
+            1. All participants must carry a valid College ID during the event.
+            </p>
+            <p>
+            2. Registration fees, once paid, are non-refundable under any circumstances.
+            </p>
+            <p>
+            3. Participants must report to the venue at least 30 minutes before the event start time.
+            </p>
+            <p>
+            4. In case of team events, the team leader will be responsible for coordination and communication.
+            </p>
+            <p>
+            5. Any form of misconduct, malpractice, or violation of event rules may lead to disqualification.
+            </p>
+            <p>
+            6. The organizing committee reserves the right to modify event details if necessary.
+            </p>
+
+            <label>
+                <input type="checkbox" name="terms-and-conditions" value="accepted" required>I have read and agree to the Terms & Conditions.
+            </label>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </section>
+    </form>
+
+        <footer>
+            <br><hr>
+            <p>@2026-2027 | All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
